@@ -10,11 +10,12 @@ LingoTribe is a MERN stack web application designed to help users find language 
 ## ✨ Features
 
 - 🌐 Connect with native speakers and learners globally  
-- 💬 Real-time chat and messaging system  
+- 💬 Real-time chat and messaging system
+- 📹 1-on-1 & Group Video Calls  
 - 🧠 Practice multiple languages in a social environment  
 - 👥 User profiles with language preferences and bios  
-- 🔒 Secure authentication system  
-- 📅 Schedule practice sessions or meetings
+- 🔒 Secure JWT Authentication 
+- 🎨 Personalized UI Themes
 
 ---
 
@@ -37,10 +38,12 @@ LingoTribe is a MERN stack web application designed to help users find language 
 - Render (Full Stack Hosting)
 
 ---
-## Environment Variables
-
+### 3️⃣ **Set Up API Keys**
+Create a `.env` file in the root directory and add:
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
 ## 🚀 Getting Started
 
@@ -50,5 +53,29 @@ JWT_SECRET=your_jwt_secret
 git clone https://github.com/viswanathr73/LingoTribe-.git
 cd LingoTribe-
 
+cd backend
+npm install
+# Create a .env file and add your MongoDB URI and JWT_SECRET
+npm run dev
 
+cd ../frontend
+npm install
+npm start
 
+`````
+## **Contributing**
+Contributions are welcome!
+If you'd like to suggest a feature, report a bug, or submit a pull request:
+
+Fork the repository
+
+Create a new branch: git checkout -b feature-name
+
+Commit your changes: git commit -m "Added feature"
+
+Push to the branch: git push origin feature-name
+
+Submit a pull request
+
+## 📜 **License**
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
